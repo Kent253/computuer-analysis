@@ -1,0 +1,799 @@
+Country,Year,variable,value
+Switzerland,2016,GIIRank,1
+Norway,2015,GIIRank,2
+Finland,2015,GIIRank,3
+Netherlands,2015,GIIRank,4
+Denmark,2014,GIIRank,4
+Sweden,2015,GIIRank,6
+Belgium,2015,GIIRank,6
+France,2015,GIIRank,8
+Iceland,2015,GIIRank,9
+Slovenia,2015,GIIRank,10
+Luxembourg,2015,GIIRank,12
+Singapore,2013,GIIRank,12
+Austria,2015,GIIRank,14
+Italy,2015,GIIRank,14
+Spain,2015,GIIRank,16
+Japan,2016,GIIRank,17
+Portugal,2015,GIIRank,18
+Germany,2015,GIIRank,20
+Cyprus,2015,GIIRank,21
+Estonia,2015,GIIRank,21
+Ireland,2015,GIIRank,23
+New Zealand,2016,GIIRank,24
+Australia,2015,GIIRank,25
+United Kingdom,2016,GIIRank,26
+Poland,2015,GIIRank,28
+Croatia,2013,GIIRank,29
+Belarus,2017,GIIRank,31
+Israel,2015,GIIRank,33
+Lithuania,2015,GIIRank,34
+Serbia,2016,GIIRank,35
+Czechia,2015,GIIRank,36
+Malta,2015,GIIRank,40
+Latvia,2015,GIIRank,41
+Qatar,2017,GIIRank,43
+Kazakhstan,2017,GIIRank,44
+Slovakia,2015,GIIRank,45
+Bulgaria,2013,GIIRank,48
+Bahrain,2017,GIIRank,49
+Russian Federation,2015,GIIRank,50
+Hungary,2015,GIIRank,51
+Ukraine,2016,GIIRank,52
+Armenia,2016,GIIRank,54
+Chile,2016,GIIRank,55
+Barbados,2017,GIIRank,56
+Malaysia,2017,GIIRank,59
+Romania,2015,GIIRank,61
+Uzbekistan,2017,GIIRank,62
+Tunisia,2015,GIIRank,65
+Viet Nam,2013,GIIRank,65
+Oman,2017,GIIRank,68
+Turkey,2015,GIIRank,68
+Tajikistan,2015,GIIRank,70
+Mongolia,2017,GIIRank,71
+Mexico,2015,GIIRank,71
+Azerbaijan,2016,GIIRank,73
+Argentina,2016,GIIRank,75
+Georgia,2017,GIIRank,76
+Mauritius,2017,GIIRank,78
+Thailand,2013,GIIRank,80
+Samoa,2016,GIIRank,81
+Maldives,2016,GIIRank,82
+Kyrgyzstan,2017,GIIRank,82
+Fiji,2013,GIIRank,84
+El Salvador,2017,GIIRank,85
+Ecuador,2015,GIIRank,86
+Peru,2017,GIIRank,87
+Jamaica,2017,GIIRank,88
+Saint Lucia,2016,GIIRank,90
+Sri Lanka,2017,GIIRank,90
+Rwanda,2017,GIIRank,92
+South Africa,2017,GIIRank,93
+Brazil,2015,GIIRank,95
+Lebanon,2013,GIIRank,96
+Belize,2017,GIIRank,97
+Bolivia,2014,GIIRank,98
+Bhutan,2017,GIIRank,99
+Honduras,2017,GIIRank,100
+Colombia,2017,GIIRank,101
+Namibia,2014,GIIRank,106
+Jordan,2017,GIIRank,109
+Nepal,2017,GIIRank,110
+Iran,2017,GIIRank,113
+Guyana,2017,GIIRank,115
+Cambodia,2014,GIIRank,117
+Myanmar,2018,GIIRank,118
+Guatemala,2017,GIIRank,119
+Indonesia,2015,GIIRank,121
+India,2013,GIIRank,123
+Burundi,2017,GIIRank,124
+Ethiopia,2015,GIIRank,125
+Kenya,2017,GIIRank,126
+Mozambique,2013,GIIRank,127
+Gabon,2014,GIIRank,128
+Zimbabwe,2014,GIIRank,129
+Senegal,2017,GIIRank,130
+Uganda,2017,GIIRank,131
+Sao Tome and Principe,2017,GIIRank,133
+Bangladesh,2016,GIIRank,133
+Ghana,2017,GIIRank,135
+Pakistan,2017,GIIRank,135
+Lesotho,2018,GIIRank,139
+Cameroon,2017,GIIRank,141
+Malawi,2017,GIIRank,142
+Eswatini,2014,GIIRank,143
+Togo,2016,GIIRank,145
+Burkina Faso,2015,GIIRank,147
+Benin,2016,GIIRank,148
+Gambia,2016,GIIRank,148
+Democratic Republic of the Congo,2017,GIIRank,150
+Mauritania,2016,GIIRank,151
+Haiti,2016,GIIRank,152
+Côte d'Ivoire,2017,GIIRank,153
+Niger,2017,GIIRank,154
+Sierra Leone,2017,GIIRank,155
+Liberia,2017,GIIRank,156
+Afghanistan,2017,GIIRank,157
+Mali,2016,GIIRank,158
+Chad,2013,GIIRank,160
+Grenada,2016,GIIRank,
+Micronesia,2015,GIIRank,
+Turkmenistan,2012,GIIRank,
+Saint Vincent and the Grenadines,2017,GIIRank,
+Madagascar,2014,GIIRank,
+Hong Kong,2017,GIIRank,
+Guinea-Bissau,2013,GIIRank,
+Comoros,2015,GIIRank,
+Albania,2016,GIIRank,
+Vanuatu,2017,GIIRank,
+Seychelles,2016,GIIRank,
+Dominica,2015,GIIRank,
+Saint Kitts and Nevis,2015,GIIRank,
+Timor-Leste,2014,GIIRank,
+South Sudan,2017,GIIRank,
+Switzerland,2016,HDIRank,2
+Norway,2015,HDIRank,1
+Finland,2015,HDIRank,11
+Netherlands,2015,HDIRank,8
+Denmark,2014,HDIRank,10
+Sweden,2015,HDIRank,7
+Belgium,2015,HDIRank,14
+France,2015,HDIRank,26
+Iceland,2015,HDIRank,4
+Slovenia,2015,HDIRank,22
+Luxembourg,2015,HDIRank,23
+Singapore,2013,HDIRank,11
+Austria,2015,HDIRank,18
+Italy,2015,HDIRank,29
+Spain,2015,HDIRank,25
+Japan,2016,HDIRank,19
+Portugal,2015,HDIRank,38
+Germany,2015,HDIRank,6
+Cyprus,2015,HDIRank,33
+Estonia,2015,HDIRank,29
+Ireland,2015,HDIRank,2
+New Zealand,2016,HDIRank,14
+Australia,2015,HDIRank,8
+United Kingdom,2016,HDIRank,19
+Poland,2015,HDIRank,35
+Croatia,2013,HDIRank,43
+Belarus,2017,HDIRank,53
+Israel,2015,HDIRank,14
+Lithuania,2015,HDIRank,34
+Serbia,2016,HDIRank,64
+Czechia,2015,HDIRank,27
+Malta,2015,HDIRank,28
+Latvia,2015,HDIRank,37
+Qatar,2017,HDIRank,45
+Kazakhstan,2017,HDIRank,51
+Slovakia,2015,HDIRank,39
+Bulgaria,2013,HDIRank,56
+Bahrain,2017,HDIRank,42
+Russian Federation,2015,HDIRank,52
+Hungary,2015,HDIRank,40
+Ukraine,2016,HDIRank,74
+Armenia,2016,HDIRank,81
+Chile,2016,HDIRank,43
+Barbados,2017,HDIRank,58
+Malaysia,2017,HDIRank,62
+Romania,2015,HDIRank,49
+Uzbekistan,2017,HDIRank,106
+Tunisia,2015,HDIRank,95
+Viet Nam,2013,HDIRank,117
+Oman,2017,HDIRank,60
+Turkey,2015,HDIRank,54
+Tajikistan,2015,HDIRank,125
+Mongolia,2017,HDIRank,99
+Mexico,2015,HDIRank,74
+Azerbaijan,2016,HDIRank,88
+Argentina,2016,HDIRank,46
+Georgia,2017,HDIRank,61
+Mauritius,2017,HDIRank,66
+Thailand,2013,HDIRank,79
+Samoa,2016,HDIRank,111
+Maldives,2016,HDIRank,95
+Kyrgyzstan,2017,HDIRank,120
+Fiji,2013,HDIRank,93
+El Salvador,2017,HDIRank,124
+Ecuador,2015,HDIRank,86
+Peru,2017,HDIRank,79
+Jamaica,2017,HDIRank,101
+Saint Lucia,2016,HDIRank,86
+Sri Lanka,2017,HDIRank,72
+Rwanda,2017,HDIRank,160
+South Africa,2017,HDIRank,114
+Brazil,2015,HDIRank,84
+Lebanon,2013,HDIRank,92
+Belize,2017,HDIRank,110
+Bolivia,2014,HDIRank,107
+Bhutan,2017,HDIRank,129
+Honduras,2017,HDIRank,132
+Colombia,2017,HDIRank,83
+Namibia,2014,HDIRank,130
+Jordan,2017,HDIRank,102
+Nepal,2017,HDIRank,142
+Iran,2017,HDIRank,70
+Guyana,2017,HDIRank,122
+Cambodia,2014,HDIRank,144
+Myanmar,2018,HDIRank,147
+Guatemala,2017,HDIRank,127
+Indonesia,2015,HDIRank,107
+India,2013,HDIRank,131
+Burundi,2017,HDIRank,185
+Ethiopia,2015,HDIRank,173
+Kenya,2017,HDIRank,143
+Mozambique,2013,HDIRank,181
+Gabon,2014,HDIRank,119
+Zimbabwe,2014,HDIRank,150
+Senegal,2017,HDIRank,168
+Uganda,2017,HDIRank,159
+Sao Tome and Principe,2017,HDIRank,135
+Bangladesh,2016,HDIRank,133
+Ghana,2017,HDIRank,138
+Pakistan,2017,HDIRank,154
+Lesotho,2018,HDIRank,165
+Cameroon,2017,HDIRank,153
+Malawi,2017,HDIRank,174
+Eswatini,2014,HDIRank,138
+Togo,2016,HDIRank,167
+Burkina Faso,2015,HDIRank,182
+Benin,2016,HDIRank,158
+Gambia,2016,HDIRank,172
+Democratic Republic of the Congo,2017,HDIRank,175
+Mauritania,2016,HDIRank,157
+Haiti,2016,HDIRank,170
+Côte d'Ivoire,2017,HDIRank,162
+Niger,2017,HDIRank,189
+Sierra Leone,2017,HDIRank,182
+Liberia,2017,HDIRank,175
+Afghanistan,2017,HDIRank,169
+Mali,2016,HDIRank,184
+Chad,2013,HDIRank,187
+Grenada,2016,HDIRank,
+Micronesia,2015,HDIRank,
+Turkmenistan,2012,HDIRank,
+Saint Vincent and the Grenadines,2017,HDIRank,
+Madagascar,2014,HDIRank,
+Hong Kong,2017,HDIRank,
+Guinea-Bissau,2013,HDIRank,
+Comoros,2015,HDIRank,
+Albania,2016,HDIRank,
+Vanuatu,2017,HDIRank,
+Seychelles,2016,HDIRank,
+Dominica,2015,HDIRank,
+Saint Kitts and Nevis,2015,HDIRank,
+Timor-Leste,2014,HDIRank,
+South Sudan,2017,HDIRank,
+Switzerland,2016,GIIValue,0.025
+Norway,2015,GIIValue,0.038
+Finland,2015,GIIValue,0.039
+Netherlands,2015,GIIValue,0.043
+Denmark,2014,GIIValue,0.043
+Sweden,2015,GIIValue,0.045
+Belgium,2015,GIIValue,0.045
+France,2015,GIIValue,0.049
+Iceland,2015,GIIValue,0.058
+Slovenia,2015,GIIValue,0.063
+Luxembourg,2015,GIIValue,0.065
+Singapore,2013,GIIValue,0.065
+Austria,2015,GIIValue,0.069
+Italy,2015,GIIValue,0.069
+Spain,2015,GIIValue,0.07
+Japan,2016,GIIValue,0.075
+Portugal,2015,GIIValue,0.079
+Germany,2015,GIIValue,0.084
+Cyprus,2015,GIIValue,0.086
+Estonia,2015,GIIValue,0.086
+Ireland,2015,GIIValue,0.093
+New Zealand,2016,GIIValue,0.094
+Australia,2015,GIIValue,0.097
+United Kingdom,2016,GIIValue,0.109
+Poland,2015,GIIValue,0.115
+Croatia,2013,GIIValue,0.116
+Belarus,2017,GIIValue,0.118
+Israel,2015,GIIValue,0.123
+Lithuania,2015,GIIValue,0.124
+Serbia,2016,GIIValue,0.132
+Czechia,2015,GIIValue,0.136
+Malta,2015,GIIValue,0.175
+Latvia,2015,GIIValue,0.176
+Qatar,2017,GIIValue,0.185
+Kazakhstan,2017,GIIValue,0.19
+Slovakia,2015,GIIValue,0.191
+Bulgaria,2013,GIIValue,0.206
+Bahrain,2017,GIIValue,0.212
+Russian Federation,2015,GIIValue,0.225
+Hungary,2015,GIIValue,0.233
+Ukraine,2016,GIIValue,0.234
+Armenia,2016,GIIValue,0.245
+Chile,2016,GIIValue,0.247
+Barbados,2017,GIIValue,0.252
+Malaysia,2017,GIIValue,0.253
+Romania,2015,GIIValue,0.276
+Uzbekistan,2017,GIIValue,0.288
+Tunisia,2015,GIIValue,0.296
+Viet Nam,2013,GIIValue,0.296
+Oman,2017,GIIValue,0.306
+Turkey,2015,GIIValue,0.306
+Tajikistan,2015,GIIValue,0.314
+Mongolia,2017,GIIValue,0.322
+Mexico,2015,GIIValue,0.322
+Azerbaijan,2016,GIIValue,0.323
+Argentina,2016,GIIValue,0.328
+Georgia,2017,GIIValue,0.331
+Mauritius,2017,GIIValue,0.347
+Thailand,2013,GIIValue,0.359
+Samoa,2016,GIIValue,0.36
+Maldives,2016,GIIValue,0.369
+Kyrgyzstan,2017,GIIValue,0.369
+Fiji,2013,GIIValue,0.37
+El Salvador,2017,GIIValue,0.383
+Ecuador,2015,GIIValue,0.384
+Peru,2017,GIIValue,0.395
+Jamaica,2017,GIIValue,0.396
+Saint Lucia,2016,GIIValue,0.401
+Sri Lanka,2017,GIIValue,0.401
+Rwanda,2017,GIIValue,0.402
+South Africa,2017,GIIValue,0.406
+Brazil,2015,GIIValue,0.408
+Lebanon,2013,GIIValue,0.411
+Belize,2017,GIIValue,0.415
+Bolivia,2014,GIIValue,0.417
+Bhutan,2017,GIIValue,0.421
+Honduras,2017,GIIValue,0.423
+Colombia,2017,GIIValue,0.428
+Namibia,2014,GIIValue,0.44
+Jordan,2017,GIIValue,0.45
+Nepal,2017,GIIValue,0.452
+Iran,2017,GIIValue,0.459
+Guyana,2017,GIIValue,0.462
+Cambodia,2014,GIIValue,0.474
+Myanmar,2018,GIIValue,0.478
+Guatemala,2017,GIIValue,0.479
+Indonesia,2015,GIIValue,0.48
+India,2013,GIIValue,0.488
+Burundi,2017,GIIValue,0.504
+Ethiopia,2015,GIIValue,0.517
+Kenya,2017,GIIValue,0.518
+Mozambique,2013,GIIValue,0.523
+Gabon,2014,GIIValue,0.525
+Zimbabwe,2014,GIIValue,0.527
+Senegal,2017,GIIValue,0.533
+Uganda,2017,GIIValue,0.535
+Sao Tome and Principe,2017,GIIValue,0.537
+Bangladesh,2016,GIIValue,0.537
+Ghana,2017,GIIValue,0.538
+Pakistan,2017,GIIValue,0.538
+Lesotho,2018,GIIValue,0.553
+Cameroon,2017,GIIValue,0.56
+Malawi,2017,GIIValue,0.565
+Eswatini,2014,GIIValue,0.567
+Togo,2016,GIIValue,0.573
+Burkina Faso,2015,GIIValue,0.594
+Benin,2016,GIIValue,0.612
+Gambia,2016,GIIValue,0.612
+Democratic Republic of the Congo,2017,GIIValue,0.617
+Mauritania,2016,GIIValue,0.634
+Haiti,2016,GIIValue,0.636
+Côte d'Ivoire,2017,GIIValue,0.638
+Niger,2017,GIIValue,0.642
+Sierra Leone,2017,GIIValue,0.644
+Liberia,2017,GIIValue,0.65
+Afghanistan,2017,GIIValue,0.655
+Mali,2016,GIIValue,0.671
+Chad,2013,GIIValue,0.71
+Grenada,2016,GIIValue,
+Micronesia,2015,GIIValue,
+Turkmenistan,2012,GIIValue,
+Saint Vincent and the Grenadines,2017,GIIValue,
+Madagascar,2014,GIIValue,
+Hong Kong,2017,GIIValue,
+Guinea-Bissau,2013,GIIValue,
+Comoros,2015,GIIValue,
+Albania,2016,GIIValue,
+Vanuatu,2017,GIIValue,
+Seychelles,2016,GIIValue,
+Dominica,2015,GIIValue,
+Saint Kitts and Nevis,2015,GIIValue,
+Timor-Leste,2014,GIIValue,
+South Sudan,2017,GIIValue,
+Switzerland,2016,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,11
+Norway,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,11
+Finland,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,9
+Netherlands,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,10
+Denmark,2014,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,10
+Sweden,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,11
+Belgium,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,11
+France,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,11
+Iceland,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,9
+Slovenia,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,9
+Luxembourg,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,5
+Singapore,2013,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,4
+Austria,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,10
+Italy,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,9
+Spain,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,9
+Japan,2016,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,11
+Portugal,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,10
+Germany,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,12
+Cyprus,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,7
+Estonia,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,7
+Ireland,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,7
+New Zealand,2016,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,10
+Australia,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,10
+United Kingdom,2016,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,10
+Poland,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,6
+Croatia,2013,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,7
+Belarus,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,6
+Israel,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,7
+Lithuania,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,7
+Serbia,2016,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,9
+Czechia,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,8
+Malta,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,8
+Latvia,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,7
+Qatar,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,3
+Kazakhstan,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,3
+Slovakia,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,7
+Bulgaria,2013,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,7
+Bahrain,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,4
+Russian Federation,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,6
+Hungary,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,6
+Ukraine,2016,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,7
+Armenia,2016,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,11
+Chile,2016,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,9
+Barbados,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,6
+Malaysia,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,4
+Romania,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,6
+Uzbekistan,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,6
+Tunisia,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,7
+Viet Nam,2013,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,5
+Oman,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,4
+Turkey,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,4
+Tajikistan,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,7
+Mongolia,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,4
+Mexico,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,5
+Azerbaijan,2016,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,4
+Argentina,2016,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,10
+Georgia,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,7
+Mauritius,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,6
+Thailand,2013,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,4
+Samoa,2016,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,6
+Maldives,2016,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,8
+Kyrgyzstan,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,4
+Fiji,2013,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,4
+El Salvador,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,7
+Ecuador,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,8
+Peru,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,5
+Jamaica,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,6
+Saint Lucia,2016,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,4
+Sri Lanka,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,4
+Rwanda,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,6
+South Africa,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,9
+Brazil,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,10
+Lebanon,2013,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,9
+Belize,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,6
+Bolivia,2014,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,7
+Bhutan,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,4
+Honduras,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,7
+Colombia,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,8
+Namibia,2014,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,8
+Jordan,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,8
+Nepal,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,4
+Iran,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,7
+Guyana,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,5
+Cambodia,2014,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,7
+Myanmar,2018,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,5
+Guatemala,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,6
+Indonesia,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,3
+India,2013,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,3
+Burundi,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,8
+Ethiopia,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,3
+Kenya,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,5
+Mozambique,2013,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,8
+Gabon,2014,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,3
+Zimbabwe,2014,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,8
+Senegal,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,4
+Uganda,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,4
+Sao Tome and Principe,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,6
+Bangladesh,2016,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,2
+Ghana,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,3
+Pakistan,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,3
+Lesotho,2018,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,11
+Cameroon,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,4
+Malawi,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,7
+Eswatini,2014,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,7
+Togo,2016,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,6
+Burkina Faso,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,5
+Benin,2016,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,2
+Gambia,2016,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,4
+Democratic Republic of the Congo,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,4
+Mauritania,2016,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,3
+Haiti,2016,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,5
+Côte d'Ivoire,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,3
+Niger,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,6
+Sierra Leone,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,9
+Liberia,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,8
+Afghanistan,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,13
+Mali,2016,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,4
+Chad,2013,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,4
+Grenada,2016,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,
+Micronesia,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,
+Turkmenistan,2012,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,
+Saint Vincent and the Grenadines,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,
+Madagascar,2014,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,
+Hong Kong,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,
+Guinea-Bissau,2013,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,
+Comoros,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,
+Albania,2016,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,
+Vanuatu,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,
+Seychelles,2016,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,
+Dominica,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,
+Saint Kitts and Nevis,2015,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,
+Timor-Leste,2014,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,
+South Sudan,2017,Current Health Expenditure (CHE) as % Gross Domestic Product (GDP) in 2019,
+Switzerland,2016,Expenditure on education(% of government spending),15.53
+Norway,2015,Expenditure on education(% of government spending),15.73
+Finland,2015,Expenditure on education(% of government spending),12.41
+Netherlands,2015,Expenditure on education(% of government spending),12.25
+Denmark,2014,Expenditure on education(% of government spending),13.83
+Sweden,2015,Expenditure on education(% of government spending),15.5
+Belgium,2015,Expenditure on education(% of government spending),12.17
+France,2015,Expenditure on education(% of government spending),9.62
+Iceland,2015,Expenditure on education(% of government spending),18.16
+Slovenia,2015,Expenditure on education(% of government spending),11.22
+Luxembourg,2015,Expenditure on education(% of government spending),9.43
+Singapore,2013,Expenditure on education(% of government spending),19.96
+Austria,2015,Expenditure on education(% of government spending),10.69
+Italy,2015,Expenditure on education(% of government spending),8.11
+Spain,2015,Expenditure on education(% of government spending),9.77
+Japan,2016,Expenditure on education(% of government spending),9.13
+Portugal,2015,Expenditure on education(% of government spending),10.15
+Germany,2015,Expenditure on education(% of government spending),10.99
+Cyprus,2015,Expenditure on education(% of government spending),16.28
+Estonia,2015,Expenditure on education(% of government spending),12.97
+Ireland,2015,Expenditure on education(% of government spending),13.03
+New Zealand,2016,Expenditure on education(% of government spending),16.57
+Australia,2015,Expenditure on education(% of government spending),14.08
+United Kingdom,2016,Expenditure on education(% of government spending),13.92
+Poland,2015,Expenditure on education(% of government spending),11.58
+Croatia,2013,Expenditure on education(% of government spending),9.49
+Belarus,2017,Expenditure on education(% of government spending),12.28
+Israel,2015,Expenditure on education(% of government spending),15.04
+Lithuania,2015,Expenditure on education(% of government spending),12.29
+Serbia,2016,Expenditure on education(% of government spending),8.69
+Czechia,2015,Expenditure on education(% of government spending),13.88
+Malta,2015,Expenditure on education(% of government spending),13.15
+Latvia,2015,Expenditure on education(% of government spending),14.13
+Qatar,2017,Expenditure on education(% of government spending),8.88
+Kazakhstan,2017,Expenditure on education(% of government spending),11.42
+Slovakia,2015,Expenditure on education(% of government spending),10.28
+Bulgaria,2013,Expenditure on education(% of government spending),11.44
+Bahrain,2017,Expenditure on education(% of government spending),7.18
+Russian Federation,2015,Expenditure on education(% of government spending),10.87
+Hungary,2015,Expenditure on education(% of government spending),9.14
+Ukraine,2016,Expenditure on education(% of government spending),12.35
+Armenia,2016,Expenditure on education(% of government spending),10.2
+Chile,2016,Expenditure on education(% of government spending),21.16
+Barbados,2017,Expenditure on education(% of government spending),12.88
+Malaysia,2017,Expenditure on education(% of government spending),21.06
+Romania,2015,Expenditure on education(% of government spending),9.08
+Uzbekistan,2017,Expenditure on education(% of government spending),19.96
+Tunisia,2015,Expenditure on education(% of government spending),22.9
+Viet Nam,2013,Expenditure on education(% of government spending),18.52
+Oman,2017,Expenditure on education(% of government spending),15.34
+Turkey,2015,Expenditure on education(% of government spending),12.84
+Tajikistan,2015,Expenditure on education(% of government spending),16.44
+Mongolia,2017,Expenditure on education(% of government spending),13.49
+Mexico,2015,Expenditure on education(% of government spending),19.02
+Azerbaijan,2016,Expenditure on education(% of government spending),8.2
+Argentina,2016,Expenditure on education(% of government spending),13.38
+Georgia,2017,Expenditure on education(% of government spending),12.95
+Mauritius,2017,Expenditure on education(% of government spending),19.93
+Thailand,2013,Expenditure on education(% of government spending),19.13
+Samoa,2016,Expenditure on education(% of government spending),10.48
+Maldives,2016,Expenditure on education(% of government spending),11.29
+Kyrgyzstan,2017,Expenditure on education(% of government spending),18.64
+Fiji,2013,Expenditure on education(% of government spending),14.3
+El Salvador,2017,Expenditure on education(% of government spending),15.63
+Ecuador,2015,Expenditure on education(% of government spending),12.6
+Peru,2017,Expenditure on education(% of government spending),18.24
+Jamaica,2017,Expenditure on education(% of government spending),18.4
+Saint Lucia,2016,Expenditure on education(% of government spending),21.98
+Sri Lanka,2017,Expenditure on education(% of government spending),14.5
+Rwanda,2017,Expenditure on education(% of government spending),11.08
+South Africa,2017,Expenditure on education(% of government spending),18.73
+Brazil,2015,Expenditure on education(% of government spending),16.25
+Lebanon,2013,Expenditure on education(% of government spending),8.58
+Belize,2017,Expenditure on education(% of government spending),21.68
+Bolivia,2014,Expenditure on education(% of government spending),16.84
+Bhutan,2017,Expenditure on education(% of government spending),24.04
+Honduras,2017,Expenditure on education(% of government spending),22.02
+Colombia,2017,Expenditure on education(% of government spending),15.17
+Namibia,2014,Expenditure on education(% of government spending),7.64
+Jordan,2017,Expenditure on education(% of government spending),12.53
+Nepal,2017,Expenditure on education(% of government spending),15.75
+Iran,2017,Expenditure on education(% of government spending),20.04
+Guyana,2017,Expenditure on education(% of government spending),18.28
+Cambodia,2014,Expenditure on education(% of government spending),8.79
+Myanmar,2018,Expenditure on education(% of government spending),9.41
+Guatemala,2017,Expenditure on education(% of government spending),23.09
+Indonesia,2015,Expenditure on education(% of government spending),20.5
+India,2013,Expenditure on education(% of government spending),14.05
+Burundi,2017,Expenditure on education(% of government spending),20.4
+Ethiopia,2015,Expenditure on education(% of government spending),27.1
+Kenya,2017,Expenditure on education(% of government spending),17.58
+Mozambique,2013,Expenditure on education(% of government spending),18.98
+Gabon,2014,Expenditure on education(% of government spending),11.23
+Zimbabwe,2014,Expenditure on education(% of government spending),30.01
+Senegal,2017,Expenditure on education(% of government spending),21.56
+Uganda,2017,Expenditure on education(% of government spending),12.01
+Sao Tome and Principe,2017,Expenditure on education(% of government spending),18.4
+Bangladesh,2016,Expenditure on education(% of government spending),11.42
+Ghana,2017,Expenditure on education(% of government spending),20.1
+Pakistan,2017,Expenditure on education(% of government spending),13.85
+Lesotho,2018,Expenditure on education(% of government spending),13.8
+Cameroon,2017,Expenditure on education(% of government spending),15.47
+Malawi,2017,Expenditure on education(% of government spending),14.34
+Eswatini,2014,Expenditure on education(% of government spending),24.95
+Togo,2016,Expenditure on education(% of government spending),15.99
+Burkina Faso,2015,Expenditure on education(% of government spending),18.03
+Benin,2016,Expenditure on education(% of government spending),18.79
+Gambia,2016,Expenditure on education(% of government spending),10.36
+Democratic Republic of the Congo,2017,Expenditure on education(% of government spending),11.71
+Mauritania,2016,Expenditure on education(% of government spending),9.33
+Haiti,2016,Expenditure on education(% of government spending),13.13
+Côte d'Ivoire,2017,Expenditure on education(% of government spending),18.62
+Niger,2017,Expenditure on education(% of government spending),13.25
+Sierra Leone,2017,Expenditure on education(% of government spending),19.92
+Liberia,2017,Expenditure on education(% of government spending),7.06
+Afghanistan,2017,Expenditure on education(% of government spending),15.66
+Mali,2016,Expenditure on education(% of government spending),13.9
+Chad,2013,Expenditure on education(% of government spending),12.46
+Grenada,2016,Expenditure on education(% of government spending),42.79
+Micronesia,2015,Expenditure on education(% of government spending),22.31
+Turkmenistan,2012,Expenditure on education(% of government spending),20.8
+Saint Vincent and the Grenadines,2017,Expenditure on education(% of government spending),18.98
+Madagascar,2014,Expenditure on education(% of government spending),18.97
+Hong Kong,2017,Expenditure on education(% of government spending),17.84
+Guinea-Bissau,2013,Expenditure on education(% of government spending),16.19
+Comoros,2015,Expenditure on education(% of government spending),15.27
+Albania,2016,Expenditure on education(% of government spending),13.6
+Vanuatu,2017,Expenditure on education(% of government spending),11.78
+Seychelles,2016,Expenditure on education(% of government spending),11.72
+Dominica,2015,Expenditure on education(% of government spending),10.52
+Saint Kitts and Nevis,2015,Expenditure on education(% of government spending),8.64
+Timor-Leste,2014,Expenditure on education(% of government spending),6.77
+South Sudan,2017,Expenditure on education(% of government spending),1.07
+Switzerland,2016,TRUE,both
+Norway,2015,TRUE,both
+Finland,2015,TRUE,both
+Netherlands,2015,TRUE,both
+Denmark,2014,TRUE,both
+Sweden,2015,TRUE,both
+Belgium,2015,TRUE,both
+France,2015,TRUE,both
+Iceland,2015,TRUE,both
+Slovenia,2015,TRUE,both
+Luxembourg,2015,TRUE,both
+Singapore,2013,TRUE,both
+Austria,2015,TRUE,both
+Italy,2015,TRUE,both
+Spain,2015,TRUE,both
+Japan,2016,TRUE,both
+Portugal,2015,TRUE,both
+Germany,2015,TRUE,both
+Cyprus,2015,TRUE,both
+Estonia,2015,TRUE,both
+Ireland,2015,TRUE,both
+New Zealand,2016,TRUE,both
+Australia,2015,TRUE,both
+United Kingdom,2016,TRUE,both
+Poland,2015,TRUE,both
+Croatia,2013,TRUE,both
+Belarus,2017,TRUE,both
+Israel,2015,TRUE,both
+Lithuania,2015,TRUE,both
+Serbia,2016,TRUE,both
+Czechia,2015,TRUE,both
+Malta,2015,TRUE,both
+Latvia,2015,TRUE,both
+Qatar,2017,TRUE,both
+Kazakhstan,2017,TRUE,both
+Slovakia,2015,TRUE,both
+Bulgaria,2013,TRUE,both
+Bahrain,2017,TRUE,both
+Russian Federation,2015,TRUE,both
+Hungary,2015,TRUE,both
+Ukraine,2016,TRUE,both
+Armenia,2016,TRUE,both
+Chile,2016,TRUE,both
+Barbados,2017,TRUE,both
+Malaysia,2017,TRUE,both
+Romania,2015,TRUE,both
+Uzbekistan,2017,TRUE,both
+Tunisia,2015,TRUE,both
+Viet Nam,2013,TRUE,both
+Oman,2017,TRUE,both
+Turkey,2015,TRUE,both
+Tajikistan,2015,TRUE,both
+Mongolia,2017,TRUE,both
+Mexico,2015,TRUE,both
+Azerbaijan,2016,TRUE,both
+Argentina,2016,TRUE,both
+Georgia,2017,TRUE,both
+Mauritius,2017,TRUE,both
+Thailand,2013,TRUE,both
+Samoa,2016,TRUE,both
+Maldives,2016,TRUE,both
+Kyrgyzstan,2017,TRUE,both
+Fiji,2013,TRUE,both
+El Salvador,2017,TRUE,both
+Ecuador,2015,TRUE,both
+Peru,2017,TRUE,both
+Jamaica,2017,TRUE,both
+Saint Lucia,2016,TRUE,both
+Sri Lanka,2017,TRUE,both
+Rwanda,2017,TRUE,both
+South Africa,2017,TRUE,both
+Brazil,2015,TRUE,both
+Lebanon,2013,TRUE,both
+Belize,2017,TRUE,both
+Bolivia,2014,TRUE,both
+Bhutan,2017,TRUE,both
+Honduras,2017,TRUE,both
+Colombia,2017,TRUE,both
+Namibia,2014,TRUE,both
+Jordan,2017,TRUE,both
+Nepal,2017,TRUE,both
+Iran,2017,TRUE,both
+Guyana,2017,TRUE,both
+Cambodia,2014,TRUE,both
+Myanmar,2018,TRUE,both
+Guatemala,2017,TRUE,both
+Indonesia,2015,TRUE,both
+India,2013,TRUE,both
+Burundi,2017,TRUE,both
+Ethiopia,2015,TRUE,both
+Kenya,2017,TRUE,both
+Mozambique,2013,TRUE,both
+Gabon,2014,TRUE,both
+Zimbabwe,2014,TRUE,both
+Senegal,2017,TRUE,both
+Uganda,2017,TRUE,both
+Sao Tome and Principe,2017,TRUE,both
+Bangladesh,2016,TRUE,both
+Ghana,2017,TRUE,both
+Pakistan,2017,TRUE,both
+Lesotho,2018,TRUE,both
+Cameroon,2017,TRUE,both
+Malawi,2017,TRUE,both
+Eswatini,2014,TRUE,both
+Togo,2016,TRUE,both
+Burkina Faso,2015,TRUE,both
+Benin,2016,TRUE,both
+Gambia,2016,TRUE,both
+Democratic Republic of the Congo,2017,TRUE,both
+Mauritania,2016,TRUE,both
+Haiti,2016,TRUE,both
+Côte d'Ivoire,2017,TRUE,both
+Niger,2017,TRUE,both
+Sierra Leone,2017,TRUE,both
+Liberia,2017,TRUE,both
+Afghanistan,2017,TRUE,both
+Mali,2016,TRUE,both
+Chad,2013,TRUE,both
+Grenada,2016,TRUE,right_only
+Micronesia,2015,TRUE,right_only
+Turkmenistan,2012,TRUE,right_only
+Saint Vincent and the Grenadines,2017,TRUE,right_only
+Madagascar,2014,TRUE,right_only
+Hong Kong,2017,TRUE,right_only
+Guinea-Bissau,2013,TRUE,right_only
+Comoros,2015,TRUE,right_only
+Albania,2016,TRUE,right_only
+Vanuatu,2017,TRUE,right_only
+Seychelles,2016,TRUE,right_only
+Dominica,2015,TRUE,right_only
+Saint Kitts and Nevis,2015,TRUE,right_only
+Timor-Leste,2014,TRUE,right_only
+South Sudan,2017,TRUE,right_only
