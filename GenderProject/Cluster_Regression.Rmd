@@ -1,0 +1,452 @@
+---
+title: "Cluster Attempt"
+output: html_notebook
+---
+
+
+## Step 1: Set up the environment 
+
+```{r, echo=FALSE, message=FALSE}
+library(cluster)
+library(tidyverse)
+library(factoextra)
+library(ggplot2)
+library(semPlot)
+library(scales)
+library(lavaan)
+library(ggpubr)
+library(ggrepel)
+```
+
+```{r}
+library(qpcR)
+```
+
+
+```{r}
+library(MASS) 
+library(rworldmap)
+```
+
+
+Loading the data from the python merge  
+
+```{r}
+GII_Data <- read.csv("C:/Users/kmull/OneDrive/Winter 2022/Comp Thinking 542/computuer-analysis/GenderProject/GII_Data_Easier.csv")
+```
+
+
+What does the data look like? They all need to be numeric (except Country)
+
+```{r}
+str(GII_Data)
+```
+```{r}
+GII_Data=na.omit(GII_Data)
+```
+
+
+```{r}
+colnames(GII_Data)
+```
+Not all the columns are helpful, so we will make new variables and change some of their names.  
+
+```{r}
+GII_Data <- rename(GII_Data, "Country" = "ï..Country")
+```
+
+```{r}
+GII_Data <- mutate(GII_Data, 
+       LFP_equal = ((Female_LFP / Male_LFP)*100),
+       HighED_equal =  ((Female_HighEd / Male_HighEd)*100),
+       Govt_equal = (Women_Govt/(100-Women_Govt))*100)
+```
+
+Select the variables to use in the cluster analysis. 
+
+```{r}
+selection=c("Country","Adolescent_Births", "Maternal_Mortality", "Govt_equal", "HighED_equal", "LFP_equal")
+```
+
+```{r}
+dataToCluster=GII_Data[,selection]
+```
+
+
+Row names need to be labels and not in the data because they are not numeric so cannot cluster.
+
+```{r}
+row.names(dataToCluster)=dataToCluster$Country
+dataToCluster$Country=NULL
+```
+
+Because Adolescent Births and Maternal Mortality have some values that exceed the 0 - 100 scale, let's set a value cap. This will cluster these countries, but when we do the analysis without the cap all the distance matrix models suggest 1 cluster. 
+
+```{r}
+dataToCluster <- replace(dataToCluster, dataToCluster > 100, 100)
+```
+
+
+
+```{r}
+str(dataToCluster)
+```
+
+
+
+```{r}
+dataToCluster_DM=daisy(x=dataToCluster, metric = "gower")
+```
+
+boxplot to see that the range is similar. 
+The values are:
+LFP_equal -> female/male Labor force participation rate 
+HighED_equal -> female/male higher education rate
+Govt_equal -> female/male government positions, 
+Maternal_Mortality -> deaths per 100,000 live births (capped at 100) - a value of 10 indicates .o1%
+Adolescent_births -> births per 1,000 women ages 15-19 (capped at 100) - a value of 10 indicates 1%
+
+
+
+
+```{r}
+boxplot(dataToCluster,horizontal = T, las=2,cex.axis=0.4)
+```
+To make the results reproducible 
+```{r}
+set.seed(999)
+```
+
+
+
+## Step 2: Compute the DISTANCE MATRIX
+
+
+
+```{r}
+fviz_nbclust(dataToCluster, 
+             pam,
+             diss=dataToCluster_DM,
+             method = "gap_stat",
+             k.max = 10 ,verbose = F)
+```
+```{r}
+fviz_nbclust(dataToCluster, 
+             hcut,
+             diss=dataToCluster_DM,
+             method = "gap_stat",
+             k.max = 10,
+             verbose = F,
+             hc_func = "agnes")
+```
+```{r}
+fviz_nbclust(dataToCluster, 
+             hcut,
+             diss=dataToCluster_DM,
+             method = "gap_stat",
+             k.max = 10,
+             verbose = F,
+             hc_func = "diana")
+```
+These models suggest the optimal number of clusters is either 8 or 2. 
+
+In deciding which number of clusters is appropriate, let's first consider what it means that the suggested clusters is either 8 or 2. WIth 2 clusters, we are creating a binary variable - does the country have gender equality or not? While that may be the research question we are seeking to answer, the fact that 8 clusters is the other option suggests that gender and gender equality may not be appropriately represented in this model. As a latent concept, gender equality here is defined by 5 different variables, but it seems that some countries may do well in some areas, but poorly in others causing the function to produce vague results.
+
+I am choosing 2 clusters for simplicity, but recognize that gender equality is a complex subject that, like gender itself, is not binary.
+
+How the UN uses these data to create the Gender Inequality Index is found here: https://hdr.undp.org/sites/default/files/hdr2020_technical_notes.pdf
+
+```{r}
+NumberOfClusterDesired=2
+
+# Partitioning technique
+res.pam = pam(x=dataToCluster_DM,
+              k = NumberOfClusterDesired,
+              cluster.only = F)
+
+# Hierarchical technique- agglomerative approach
+
+#library(factoextra)
+res.agnes= hcut(dataToCluster_DM, 
+                k = NumberOfClusterDesired,
+                isdiss=TRUE,
+                hc_func='agnes',
+                hc_method = "ward.D2")
+
+# Hierarchical technique- divisive approach
+res.diana= hcut(dataToCluster_DM, 
+                k = NumberOfClusterDesired,
+                isdiss=TRUE,
+                hc_func='diana',
+                hc_method = "ward.D2")
+```
+
+Now to add the results to original data frame.
+
+
+```{r}
+GII_Data$pam=as.factor(res.pam$clustering)
+GII_Data$agn=as.factor(res.agnes$cluster)
+GII_Data$dia=as.factor(res.diana$cluster)
+```
+
+
+```{r}
+view(GII_Data)
+```
+
+This function checks that the clusters are in ascending order. When I ran this with 8 clusters, the aggregate sum of the clusters was NOT consequative suggesting that the clusters were all over the map.
+
+```{r}
+aggregate(data=GII_Data,
+          GII_Rank~pam,
+          FUN=mean)
+```
+
+```{r}
+aggregate(data=GII_Data,
+          GII_Rank~agn,
+          FUN=mean)
+```
+
+```{r}
+aggregate(data=GII_Data,
+          GII_Rank~dia,
+          FUN=mean)
+```
+
+```{r}
+GII_Data$pam=dplyr::recode_factor(GII_Data$pam, 
+                  `1` = '4',`2`='3',`3`='2',`4`='1')
+GII_Data$agn=dplyr::recode_factor(GII_Data$agn, 
+                  `1` = '4',`2`='3',`3`='2',`4`='1')
+GII_Data$dia=dplyr::recode_factor(GII_Data$dia, 
+                  `1` = '4',`2`='3',`3`='2',`4`='1')
+```
+
+
+
+
+## Step 3 - evaluating the results
+
+
+```{r}
+fviz_silhouette(res.pam)
+```
+
+```{r}
+fviz_silhouette(res.agnes)
+```
+
+
+```{r}
+fviz_silhouette(res.diana)
+```
+
+```{r}
+head(data.frame(res.pam$silinfo$widths),10)
+```
+
+```{r}
+pamEval=data.frame(res.pam$silinfo$widths)
+agnEval=data.frame(res.agnes$silinfo$widths)
+diaEval=data.frame(res.diana$silinfo$widths)
+
+pamPoor=rownames(pamEval[pamEval$sil_width<0,])
+agnPoor=rownames(agnEval[agnEval$sil_width<0,])
+diaPoor=rownames(diaEval[diaEval$sil_width<0,])
+```
+
+
+```{r}
+bap_Clus=as.data.frame(qpcR:::cbind.na(sort(pamPoor), sort(agnPoor),sort(diaPoor)))
+names(bap_Clus)=c("pam","agn","dia")
+bap_Clus
+```
+
+It looks like dia does the best at clustering the data into two clusters because there is no overlap. 
+
+
+Now let's put the countries on one visual map
+
+```{r}
+projectedData = cmdscale(dataToCluster_DM, k=2)
+```
+
+```{r}
+# save coordinates to original data frame:
+GII_Data$dim1 = projectedData[,1]
+GII_Data$dim2 = projectedData[,2]
+
+# see some:
+
+GII_Data[,c('dim1','dim2')][1:10,]
+```
+```{r}
+base= ggplot(data=GII_Data,
+             aes(x=dim1, y=dim2,
+                 label=Country)) 
+base + geom_text(size=2)
+```
+```{r}
+pamPlot=base + labs(title = "PAM") + geom_point(size=2,
+                                              aes(color=pam),
+                                              show.legend = T) 
+```
+```{r}
+agnPlot=base + labs(title = "AGNES") + geom_point(size=2,
+                                              aes(color=agn),
+                                              show.legend = T) 
+```
+
+```{r}
+diaPlot=base + labs(title = "DIANA") + geom_point(size=2,
+                                              aes(color=dia),
+                                              show.legend = T) 
+```
+
+```{r}
+ggarrange(pamPlot, agnPlot, diaPlot,ncol = 3,common.legend = T)
+```
+
+```{r}
+# If name of country in black list, use it, else get rid of it
+LABELpam=ifelse(GII_Data$Country%in%pamPoor,GII_Data$Country,"")
+LABELdia=ifelse(GII_Data$Country%in%diaPoor,GII_Data$Country,"")
+LABELagn=ifelse(GII_Data$Country%in%agnPoor,GII_Data$Country,"")
+```
+
+```{r}
+pamPlot + geom_text_repel(aes(label=LABELpam))
+```
+
+```{r}
+diaPlot + geom_text_repel(aes(label=LABELdia))
+```
+```{r}
+agnPlot + geom_text_repel(aes(label=LABELagn))
+```
+
+From looking at these plots, it looks like there is not a linear path. In the upper left corner, there is a clear cluster and line of countries, presumably the Western countries, that fit nicely into a category. For the rest of the world, it seems that this model does not track Gender Inequality perfectly.  
+
+
+
+## Step 4 - factor analysis 
+
+
+```{r}
+dataForFA <- GII_Data[,selection]
+```
+```{r}
+names(dataForFA)
+```
+
+```{r}
+model='ginequal=~Adolescent_Births + Maternal_Mortality + Govt_equal + HighED_equal + LFP_equal'
+```
+```{r}
+fit<- cfa(model, data = dataForFA,std.lv=TRUE)
+indexCFA<-lavPredict(fit)
+```
+```{r}
+indexCFA[1:10]
+```
+```{r}
+indexCFANorm=rescale(as.vector(indexCFA), 
+                     to = c(0, 10))
+indexCFANorm[1:10]
+```
+
+
+
+```{r}
+GII_Data$demo_FA=indexCFANorm
+```
+
+How closely do these values match what the UN gets for their GII values? 
+
+```{r}
+base=ggplot(data=GII_Data,
+            aes(x=demo_FA,y=Value))
+base+geom_point()
+
+```
+```{r}
+evalCFA1=parameterEstimates(fit, standardized =TRUE)
+```
+```{r}
+evalCFA1[evalCFA1$op=="=~",c('rhs','std.all','pvalue')]
+```
+
+```{r}
+evalCFA2=as.list(fitMeasures(fit))
+```
+```{r}
+evalCFA2[c("chisq", "df", "pvalue")] 
+```
+you want this value to be > .90, which it is barely under. When I ran this with 8 clusters, it was far lower.
+
+```{r}
+evalCFA2$tli
+```
+```{r}
+evalCFA2[c( 'rmsea.ci.lower','rmsea','rmsea.ci.upper')] 
+```
+
+
+```{r}
+semPaths(fit, what='std', nCharNodes=0, sizeMan=12,
+         edge.label.cex=1.5, fade=T,residuals = F)
+```
+## Now for regression
+
+
+I hypothesis that the amount of women in higher education impacts gender inequality.
+I hypothesis is that gender equality is impacted by maternal mortality and higher education.
+
+higher education and maternal mortality are related to each other. 
+```{r}
+hypo1=formula(Female_HighEd ~ Adolescent_Births)
+
+hypo2=formula(Female_HighEd ~ Adolescent_Births + Maternal_Mortality)
+```
+One variable that most likely impacts all three is the countries financial status. maternal mortality and higher education opportunities are both impacted by the country's gdp and other financial factors that contribute to the status of the hospitals and schools. 
+
+```{r}
+gauss1=glm(hypo1,
+           data = GII_Data,
+           family = 'gaussian')
+
+gauss2=glm(hypo2,
+           data = GII_Data,
+           family = 'gaussian')
+```
+
+```{r}
+summary(gauss1)
+```
+
+```{r}
+summary(gauss2)
+```
+```{r}
+anova(gauss1,gauss2,test="Chisq")
+```
+
+```{r}
+plot(gauss2,1)
+```
+The model should not be linear. 
+
+```{r}
+plot(gauss2,2)
+```
+The p value is well below .05 - the data is not normally distributed. 
+
+```{r}
+shapiro.test(gauss2$residuals)
+```
+```{r}
+plot(gauss2, 3)
+```
+
