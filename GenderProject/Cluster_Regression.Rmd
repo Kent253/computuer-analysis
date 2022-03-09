@@ -6,7 +6,7 @@ output: html_notebook
 
 ## Step 1: Set up the environment 
 
-```{r, echo=FALSE, message=FALSE}
+```{r, include=FALSE}
 library(cluster)
 library(tidyverse)
 library(factoextra)
@@ -18,12 +18,13 @@ library(ggpubr)
 library(ggrepel)
 ```
 
-```{r}
+```{r, include=FALSE}
 library(qpcR)
+library(dplyr)
 ```
 
 
-```{r}
+```{r, include=FALSE}
 library(MASS) 
 library(rworldmap)
 ```
@@ -55,6 +56,8 @@ Not all the columns are helpful, so we will make new variables and change some o
 GII_Data <- rename(GII_Data, "Country" = "ï..Country")
 ```
 
+Now I want to make female labor force participation, higher education, and government positions all percentages in relation to the percentage of men for the respective category. 100% would indicate that an equal number between men and women, and smaller numbers mean that women are disproportionatley not represented in that field. 
+
 ```{r}
 GII_Data <- mutate(GII_Data, 
        LFP_equal = ((Female_LFP / Male_LFP)*100),
@@ -65,7 +68,7 @@ GII_Data <- mutate(GII_Data,
 Select the variables to use in the cluster analysis. 
 
 ```{r}
-selection=c("Country","Adolescent_Births", "Maternal_Mortality", "Govt_equal", "HighED_equal", "LFP_equal")
+selection=c("Adolescent_Births", "Maternal_Mortality", "Govt_equal", "HighED_equal", "LFP_equal")
 ```
 
 ```{r}
@@ -76,22 +79,30 @@ dataToCluster=GII_Data[,selection]
 Row names need to be labels and not in the data because they are not numeric so cannot cluster.
 
 ```{r}
-row.names(dataToCluster)=dataToCluster$Country
-dataToCluster$Country=NULL
+row.names(dataToCluster)=GII_Data$Country
 ```
 
-Because Adolescent Births and Maternal Mortality have some values that exceed the 0 - 100 scale, let's set a value cap. This will cluster these countries, but when we do the analysis without the cap all the distance matrix models suggest 1 cluster. 
-
-```{r}
-dataToCluster <- replace(dataToCluster, dataToCluster > 100, 100)
-```
-
-
+Because Adolescent Births and Maternal Mortality have some values that exceed the 0 - 100 scale, so we need to scale the data to place each variable is comparable and on the same scale. Also, as they are written the higher the number the worse the outcome. All variables need to be socially 'good' as the number goes up, so we take the inverse of these two variables.
 
 ```{r}
 str(dataToCluster)
 ```
+```{r}
+dataToCluster[,]=lapply(dataToCluster[,], scale)
+```
 
+
+```{r}
+dataToCluster=as.data.frame(scale(dataToCluster))
+```
+```{r}
+dataToCluster$Adolescent_Births=-1*(dataToCluster$Adolescent_Births)
+dataToCluster$Maternal_Mortality=-1*(dataToCluster$Maternal_Mortality)
+```
+
+```{r}
+str(dataToCluster)
+```
 
 
 ```{r}
@@ -103,8 +114,8 @@ The values are:
 LFP_equal -> female/male Labor force participation rate 
 HighED_equal -> female/male higher education rate
 Govt_equal -> female/male government positions, 
-Maternal_Mortality -> deaths per 100,000 live births (capped at 100) - a value of 10 indicates .o1%
-Adolescent_births -> births per 1,000 women ages 15-19 (capped at 100) - a value of 10 indicates 1%
+Maternal_Mortality -> deaths per 100,000 live births - set to scale and inverse
+Adolescent_births -> births per 1,000 women ages 15-19 - set to scale and inverse
 
 
 
@@ -148,16 +159,18 @@ fviz_nbclust(dataToCluster,
              verbose = F,
              hc_func = "diana")
 ```
-These models suggest the optimal number of clusters is either 8 or 2. 
+These models suggest the optimal number of clusters is either 8 or 1. 
 
-In deciding which number of clusters is appropriate, let's first consider what it means that the suggested clusters is either 8 or 2. WIth 2 clusters, we are creating a binary variable - does the country have gender equality or not? While that may be the research question we are seeking to answer, the fact that 8 clusters is the other option suggests that gender and gender equality may not be appropriately represented in this model. As a latent concept, gender equality here is defined by 5 different variables, but it seems that some countries may do well in some areas, but poorly in others causing the function to produce vague results.
+In deciding which number of clusters is appropriate, let's first consider what it means that the suggested clusters is either 8 or 1. With 2 clusters, we are creating a binary variable - does the country have gender equality or not? While that may be the research question we are seeking to answer, the fact that 8 clusters is the other option suggests that gender and gender equality may not be appropriately represented in this model. As a latent concept, gender equality here is defined by 5 different variables, but it seems that some countries may do well in some areas, but poorly in others causing the function to produce vague results.
 
 I am choosing 2 clusters for simplicity, but recognize that gender equality is a complex subject that, like gender itself, is not binary.
+
+I will run the exercise again with 5 clusters to see where countries land.
 
 How the UN uses these data to create the Gender Inequality Index is found here: https://hdr.undp.org/sites/default/files/hdr2020_technical_notes.pdf
 
 ```{r}
-NumberOfClusterDesired=2
+NumberOfClusterDesired=5
 
 # Partitioning technique
 res.pam = pam(x=dataToCluster_DM,
@@ -195,7 +208,7 @@ GII_Data$dia=as.factor(res.diana$cluster)
 view(GII_Data)
 ```
 
-This function checks that the clusters are in ascending order. When I ran this with 8 clusters, the aggregate sum of the clusters was NOT consequative suggesting that the clusters were all over the map.
+This function checks that the clusters are in ascending order. When I ran this with 8 clusters, the aggregate sum of the clusters was NOT consecutive suggesting that the clusters were all over the map.
 
 ```{r}
 aggregate(data=GII_Data,
@@ -335,7 +348,7 @@ From looking at these plots, it looks like there is not a linear path. In the up
 
 
 ```{r}
-dataForFA <- GII_Data[,selection]
+dataForFA <- dataToCluster
 ```
 ```{r}
 names(dataForFA)
@@ -380,6 +393,9 @@ evalCFA1[evalCFA1$op=="=~",c('rhs','std.all','pvalue')]
 
 ```{r}
 evalCFA2=as.list(fitMeasures(fit))
+
+
+
 ```
 ```{r}
 evalCFA2[c("chisq", "df", "pvalue")] 
@@ -390,27 +406,29 @@ you want this value to be > .90, which it is barely under. When I ran this with 
 evalCFA2$tli
 ```
 ```{r}
-evalCFA2[c( 'rmsea.ci.lower','rmsea','rmsea.ci.upper')] 
-```
-
-
-```{r}
 semPaths(fit, what='std', nCharNodes=0, sizeMan=12,
          edge.label.cex=1.5, fade=T,residuals = F)
 ```
+
+Labor Force Equality may be negatively correlated with women equality because in some countries with low labor force participation for men and women, they rank highly on LFP equality, but most likely have a smaller economy. The size of a country's economy is a better indicator for gender equity than equal labor force participation. 
+
+
 ## Now for regression
 
 
-I hypothesis that the amount of women in higher education impacts gender inequality.
-I hypothesis is that gender equality is impacted by maternal mortality and higher education.
+The amount of women in higher education impacts gender inequality, as we have seen, but I want to measure the correlation between variables in the original model.
 
-higher education and maternal mortality are related to each other. 
+I hypothesis is that female higher education is impacted by maternal mortality, adolescent birth, and government equality.
+
+
 ```{r}
 hypo1=formula(Female_HighEd ~ Adolescent_Births)
 
 hypo2=formula(Female_HighEd ~ Adolescent_Births + Maternal_Mortality)
+
+hypo3=formula(Female_HighEd ~ Adolescent_Births + Maternal_Mortality + Women_Govt)
 ```
-One variable that most likely impacts all three is the countries financial status. maternal mortality and higher education opportunities are both impacted by the country's gdp and other financial factors that contribute to the status of the hospitals and schools. 
+One variable that most likely impacts all three is the size of the economy or gdp. maternal mortality and higher education opportunities are both impacted by the country's gdp and other financial factors that contribute to the status of the hospitals and schools. 
 
 ```{r}
 gauss1=glm(hypo1,
@@ -418,6 +436,10 @@ gauss1=glm(hypo1,
            family = 'gaussian')
 
 gauss2=glm(hypo2,
+           data = GII_Data,
+           family = 'gaussian')
+
+gauss3=glm(hypo3,
            data = GII_Data,
            family = 'gaussian')
 ```
@@ -430,7 +452,12 @@ summary(gauss1)
 summary(gauss2)
 ```
 ```{r}
-anova(gauss1,gauss2,test="Chisq")
+summary(gauss3)
+```
+
+
+```{r}
+anova(gauss1,gauss2,gauss3, test="Chisq")
 ```
 
 ```{r}
